@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_gap">24dp</dimen>
+    <dimen name="normal_gap">24dp</dimen>
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="text_inputs_size">40sp</dimen>
+</resources>
