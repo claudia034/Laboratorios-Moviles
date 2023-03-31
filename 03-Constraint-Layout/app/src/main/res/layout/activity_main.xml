@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout_4"
+        app:layout_constraintTop_toBottomOf="@+id/cantidad">
+
+        <ImageButton
+            android:id="@+id/boton_diez_centavos"
+            android:layout_width="@dimen/image_dimen"
+            android:layout_height="@dimen/image_dimen"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/ten_cents_description_text"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ten_cents" />
+
+        <TextView
+            android:id="@+id/diez_centavos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_gap"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:text="@string/ten_cents_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_text"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout_3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_1">
+
+        <ImageButton
+            android:id="@+id/boton_un_dolar"
+            android:layout_width="@dimen/image_dimen"
+            android:layout_height="@dimen/image_dimen"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/one_dollar_description_text"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/one_dollar" />
+
+        <TextView
+            android:id="@+id/un_dolar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_gap"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:text="@string/one_dollar_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout_2"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout_2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/boton_veinticinco_centavos"
+            android:layout_width="@dimen/image_dimen"
+            android:layout_height="@dimen/image_dimen"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/quarter_description_text"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/quarter" />
+
+        <TextView
+            android:id="@+id/veinticinco_centavos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_gap"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:text="@string/quarter_text" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_title"
+        android:text="@string/title_text"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_title"
+        android:textColor="@color/black"
+        android:text="@string/money_hint"
+        android:textSize="@dimen/very_large_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout_1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout_1">
+
+        <ImageButton
+            android:id="@+id/boton_cinco_centavos"
+            android:layout_width="@dimen/image_dimen"
+            android:layout_height="@dimen/image_dimen"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/five_cents_description_text"
+            android:scaleType="fitXY"
+            android:textColor="@color/black"
+            app:srcCompat="@drawable/five_cents" />
+
+        <TextView
+            android:id="@+id/cinco_centavos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_gap"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:text="@string/five_cents_text" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
