@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".movieFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:backgroundTint="@color/backgroundLayout"
+        android:padding="@dimen/general_gap">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/general_gap"
+            android:text="@string/rating_movie1"
+            android:textColor="@color/rating"
+            android:textSize="@dimen/largeSize_text"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movie1_tittle"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mediumSize_text"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/star_wars_pic"
+            app:layout_constraintStart_toStartOf="@+id/star_wars_pic"
+            tools:layout_editor_absoluteY="241dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_gap"
+
+            android:text="@string/movie1_category"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mediumSize_text"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/star_wars_pic"
+            android:layout_width="240dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="@dimen/general_gap"
+            android:layout_marginTop="@dimen/large_gap"
+            android:layout_marginEnd="@dimen/general_gap"
+            android:contentDescription="@string/movie1_tittle"
+            android:padding="@dimen/small_gap"
+            android:src="@drawable/star_wars"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.541"></ImageView>
+
+        <TextView
+            android:id="@+id/movie_descirption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_gap"
+            android:elegantTextHeight="true"
+            android:text="@string/movie1_description"
+            android:textColor="@color/white"
+            android:textSize="@dimen/smallSize_text"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
